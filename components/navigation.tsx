@@ -1,23 +1,18 @@
-// components/navigation.jsx
-"use client";
-
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function Navigation() {
     const [mobileNavOpen, setMobileNavOpen] = useState(false);
-    const navRef = useRef(null);
+    const navRef = useRef<HTMLDivElement>(null); // Specify the type of navRef
 
     useEffect(() => {
-        // Функция для закрытия меню при клике за его пределы
         function handleClickOutside(event: MouseEvent) {
-            if (navRef.current && navRef.current instanceof HTMLElement && !navRef.current.contains(event.target as Node)) {
+            if (navRef.current && !navRef.current.contains(event.target as Node)) {
                 setMobileNavOpen(false);
             }
         }
 
-        // Добавляем обработчик события для клика за пределы меню
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
