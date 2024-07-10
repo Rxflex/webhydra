@@ -4,10 +4,12 @@ import Link from 'next/link';
 
 export default function Navigation() {
     const [mobileNavOpen, setMobileNavOpen] = useState(false);
-    const navRef = useRef<HTMLDivElement>(null); // Specify the type of navRef
+    const navRef = useRef<HTMLDivElement | null>(null); // Specify the type as HTMLDivElement | null
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
+            if (navRef.current && !(navRef.current instanceof HTMLElement)) return; // Check if current is not null and is an HTMLElement
+
             if (navRef.current && !navRef.current.contains(event.target as Node)) {
                 setMobileNavOpen(false);
             }
