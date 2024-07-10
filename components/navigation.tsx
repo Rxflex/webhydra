@@ -11,11 +11,12 @@ export default function Navigation() {
 
     useEffect(() => {
         // Функция для закрытия меню при клике за его пределы
-        function handleClickOutside(event) {
-            if (navRef.current && !navRef.current.contains(event.target)) {
+        function handleClickOutside(event: MouseEvent) {
+            if (navRef.current && !navRef.current.contains(event.target as Node)) {
                 setMobileNavOpen(false);
             }
         }
+
         // Добавляем обработчик события для клика за пределы меню
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
