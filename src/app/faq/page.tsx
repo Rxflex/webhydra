@@ -8,7 +8,7 @@ import Navigation from '../../../components/navigation';
 export default function FAQPage() {
     const [activeAccordion, setActiveAccordion] = useState('');
 
-    const toggleAccordion = (id) => {
+    const toggleAccordion = (id: string) => {
         setActiveAccordion(activeAccordion === id ? '' : id);
     };
 
