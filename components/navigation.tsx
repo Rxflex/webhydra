@@ -76,6 +76,11 @@ export default function Navigation() {
                                 <Link href="/download">Download</Link>
                             </li>
                         </ul>
+                        <div className="mt-6 text-center">
+                            <button onClick={() => setMobileNavOpen(false)} className="py-2 px-4 text-base font-medium border border-gray-400 hover:border-gray-500 rounded-xl focus:ring focus:ring-gray-50 bg-black hover:bg-gray-800 text-white transition ease-in-out duration-200">
+                                Close
+                            </button>
+                        </div>
                     </div>
                 </motion.div>
             )}
