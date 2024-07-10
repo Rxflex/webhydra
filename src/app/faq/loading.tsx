@@ -11,7 +11,7 @@ const Loading: FC = () => {
           justify-content: center;
           align-items: center;
           height: 100vh;
-          background-color: #1f1f1f; /* Цвет фона в темной теме */
+          background-color: #000; /* Цвет фона в темной теме */
         }
         .loading-spinner {
           border: 4px solid rgba(255, 255, 255, 0.3); /* Цвет и прозрачность обводки */
