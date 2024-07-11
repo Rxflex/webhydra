@@ -4,7 +4,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Navigation from '@/components/navigation';
 import { useTranslations } from '@/lib/languages';
-import {FAQ, FAQAccordion} from "@/components/faq";
+import {FAQAccordion} from "@/components/faq";
 let language = 'en';
 
 export default function FAQPage() {
