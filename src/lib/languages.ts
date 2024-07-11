@@ -9,6 +9,6 @@ const translations = {
     es
 };
 
-export const useTranslations = (locale: string) : object => {
+export const useTranslations = (locale: string) : any => {
     return translations[locale] || translations['en']; // Default to 'en' if locale not found
 };
