@@ -1,6 +1,13 @@
-import Navigation from "../../../components/navigation";
+"use client";
 
+import Navigation from "@/components/navigation";
+import { useTranslations } from "@/lib/languages";
+let language = 'en';
 export default function DownloadPage() {
+    if (typeof window !== "undefined") {
+        language = localStorage.getItem("lang") || "en"
+    }
+    const t = useTranslations(language);
     return (
         <main>
             <Navigation />
@@ -10,7 +17,7 @@ export default function DownloadPage() {
                         <div className="inline-block mb-7 px-2 py-1 text-sm font-semibold bg-green-100 rounded-full">
                             <div className="flex flex-wrap items-center -m-1">
                                 <div className="w-auto p-1">
-                                    <p className="text-black">👋 The project is always updated</p>
+                                    <p className="text-black">{t.download.uptitle}</p>
                                 </div>
                                 <div className="w-auto p-1">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,8 +26,8 @@ export default function DownloadPage() {
                                 </div>
                             </div>
                         </div>
-                        <h2 className="mb-6 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none">Possible downloads</h2>
-                        <p className="mb-16 text-lg text-gray-600 font-medium">Select your operating system to download</p>
+                        <h2 className="mb-6 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none">{t.download.title}</h2>
+                        <p className="mb-16 text-lg text-gray-600 font-medium">{t.download.description}</p>
                         <div className="flex flex-wrap -m-4">
                             <div className="w-full md:w-1/3 p-4">
                                 <div className="max-w-max mx-auto overflow-hidden rounded-3xl">

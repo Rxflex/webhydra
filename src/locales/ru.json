@@ -1,0 +1,31 @@
+{
+    "home": {
+        "meet": "👋 Познакомьтесь с HydraLauncher"
+    },
+    "faq": {
+        "title": "Часто задаваемые вопросы",
+        "description": "Список проблем, с которыми часто сталкиваются наши пользователи",
+        "discord": "Сообщество в Discord",
+        "items": [
+            {
+                "title": "Как приложение помогает людям с проблемами?",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, tempor condimentum commodo tincidunt sit amet, semper dictum est. Eu placerat lectus a arcu tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat tempor libero, sed tempor ante condimentum vitae. Fusce vel purus non ipsum dictum luctus."
+            },
+            {
+                "title": "Какие преимущества использования приложения?",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, tempor condimentum commodo tincidunt sit amet, semper dictum est. Eu placerat lectus a arcu tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat tempor libero, sed tempor ante condimentum vitae. Fusce vel purus non ipsum dictum luctus."
+            }
+        ]
+    },
+    "download": {
+        "uptitle": "\uD83D\uDC4B Проект всегда обновляется",
+        "title": "Доступные загрузки",
+        "description": "Выберите вашу операционную систему для загрузки"
+    },
+    "global": {
+        "download": "Скачать",
+        "support_menu": "Поддержка",
+        "faq_menu": "FAQ",
+        "links_menu": "Ссылки сообщества"
+    }
+}
