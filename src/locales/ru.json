@@ -8,12 +8,20 @@
         "discord": "Сообщество в Discord",
         "items": [
             {
-                "title": "Как приложение помогает людям с проблемами?",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, tempor condimentum commodo tincidunt sit amet, semper dictum est. Eu placerat lectus a arcu tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat tempor libero, sed tempor ante condimentum vitae. Fusce vel purus non ipsum dictum luctus."
+                "title": "Нет доступных загрузок, что делать?",
+                "description": "В меню сайта сверху, выберите Ссылки сообщества и добавьте необходимые источники загрузки. Если проблема повторилась, воспользуйтесь сервером сообщества."
             },
             {
-                "title": "Какие преимущества использования приложения?",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, tempor condimentum commodo tincidunt sit amet, semper dictum est. Eu placerat lectus a arcu tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat tempor libero, sed tempor ante condimentum vitae. Fusce vel purus non ipsum dictum luctus."
+                "title": "Одна из игр в моей библиотеке не запускается, что делать?",
+                "description": "Возможно вам попался не рабочий репак, попробуйте скачать другой. Если проблема повторилась, воспользуйтесь сервером сообщества."
+            },
+            {
+                "title": "Что это за сайт?",
+                "description": "Этот сайт не является официальным и служит для поддержки комьюнити HydraLauncher. Он никак не связан с официальными разработчиками."
+            },
+            {
+                "title": "Правообладателям",
+                "description": "Автор сайта не несет никакой ответственности за проект HydraLauncher, а также за материалы размещенные в разделах 'Загрузка' и 'Ссылки сообщества'. Веб-сайт выступает лишь как информационный ресурс."
             }
         ]
     },
