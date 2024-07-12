@@ -3,29 +3,37 @@
         "meet": "👋 Conoce HydraLauncher"
     },
     "faq": {
-        "title": "Preguntas frecuentes",
-        "description": "Una lista de problemas que nuestros usuarios encuentran con frecuencia",
+        "title": "Preguntas Frecuentes",
+        "description": "Lista de problemas que frecuentemente enfrentan nuestros usuarios",
         "discord": "Comunidad en Discord",
         "items": [
             {
-                "title": "¿Cómo ayuda la aplicación a las personas con problemas?",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, tempor condimentum commodo tincidunt sit amet, semper dictum est. Eu placerat lectus a arcu tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat tempor libero, sed tempor ante condimentum vitae. Fusce vel purus non ipsum dictum luctus."
+                "title": "No hay descargas disponibles, ¿qué hacer?",
+                "description": "En el menú superior del sitio, seleccione Enlaces de la comunidad y agregue las fuentes de descarga necesarias. Si el problema persiste, utilice el servidor de la comunidad."
             },
             {
-                "title": "¿Cuáles son los beneficios de usar la aplicación?",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, tempor condimentum commodo tincidunt sit amet, semper dictum est. Eu placerat lectus a arcu tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat tempor libero, sed tempor ante condimentum vitae. Fusce vel purus non ipsum dictum luctus."
+                "title": "Uno de los juegos en mi biblioteca no se inicia, ¿qué hacer?",
+                "description": "Es posible que haya descargado un repack defectuoso, intente descargar otro. Si el problema persiste, utilice el servidor de la comunidad."
+            },
+            {
+                "title": "¿Qué es este sitio?",
+                "description": "Este sitio no es oficial y sirve para apoyar a la comunidad de HydraLauncher. No está afiliado a los desarrolladores oficiales."
+            },
+            {
+                "title": "Para los titulares de derechos",
+                "description": "El autor del sitio no asume ninguna responsabilidad por el proyecto HydraLauncher ni por los materiales publicados en las secciones 'Descarga' y 'Enlaces de la comunidad'. El sitio web es solo un recurso informativo."
             }
         ]
     },
     "download": {
         "uptitle": "\uD83D\uDC4B El proyecto siempre está actualizado",
-        "title": "Descargas disponibles",
-        "description": "Selecciona tu sistema operativo para descargar"
+        "title": "Descargas Disponibles",
+        "description": "Seleccione su sistema operativo para descargar"
     },
     "global": {
         "download": "Descargar",
         "support_menu": "Soporte",
         "faq_menu": "FAQ",
-        "links_menu": "Enlaces de la Comunidad"
+        "links_menu": "Enlaces de la comunidad"
     }
 }
