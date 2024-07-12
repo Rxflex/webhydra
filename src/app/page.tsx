@@ -5,6 +5,7 @@ import React from 'react';
 import Navigation from '@/components/navigation';
 import Link from 'next/link';
 import {isLocale, useTranslations} from '@/lib/languages';
+import {Footer} from "@/components/footer";
 let language = 'en';
 
 export default function HomePage() {
@@ -34,6 +35,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </main>
     );
 }

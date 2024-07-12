@@ -2,6 +2,7 @@
 
 import Navigation from "@/components/navigation";
 import { useTranslations, isLocale } from "@/lib/languages";
+import {Footer} from "@/components/footer";
 let language = 'en';
 export default function DownloadPage({
     params
@@ -59,6 +60,7 @@ export default function DownloadPage({
                     </div>
                 </div>
             </section>
+            <Footer />
         </main>
     );
 }

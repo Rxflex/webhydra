@@ -2,6 +2,7 @@
 import Navigation from '@/components/navigation';
 import {isLocale, useTranslations} from '@/lib/languages';
 import {FAQAccordion} from "@/components/faq";
+import {Footer} from "@/components/footer";
 let language = 'en';
 
 export default function FAQPage() {
@@ -44,6 +45,7 @@ export default function FAQPage() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </main>
     );
 }
