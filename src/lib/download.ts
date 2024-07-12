@@ -16,7 +16,7 @@ export async function getDownloadUrl ({os} : DownloadArgs): Promise<response> {
         return {
             version: json.tag_name,
             url: json.assets
-                .filter((asset: any) => asset.name.includes('setup.exe'))
+                .filter((asset: any) => asset.name.endsWith('setup.exe'))
                 .map((asset: any) => asset.browser_download_url)
         }
     }
