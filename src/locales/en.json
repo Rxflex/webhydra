@@ -1,31 +1,39 @@
-    {
-        "home": {
-            "meet": "👋 Meet HydraLauncher"
-        },
-        "faq": {
-            "title": "Frequently Asked Questions",
-            "description": "A list of issues that our users often encounter",
-            "discord": "Discord Community",
-            "items": [
-                {
-                    "title": "How does App help people in problems?",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, tempor condimentum commodo tincidunt sit amet, semper dictum est. Eu placerat lectus a arcu tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat tempor libero, sed tempor ante condimentum vitae. Fusce vel purus non ipsum dictum luctus."
-                },
-                {
-                    "title": "What are the benefits of using App?",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, tempor condimentum commodo tincidunt sit amet, semper dictum est. Eu placerat lectus a arcu tempor semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat tempor libero, sed tempor ante condimentum vitae. Fusce vel purus non ipsum dictum luctus."
-                }
-            ]
-        },
-        "download": {
-            "uptitle": "\uD83D\uDC4B The project is always updated",
-            "title": "Possible downloads",
-            "description": "Select your operating system to download"
-        },
-        "global": {
-            "download": "Download",
-            "support_menu": "Support",
-            "faq_menu": "FAQ",
-            "links_menu": "Community Links"
-        }
+{
+    "home": {
+        "meet": "👋 Meet HydraLauncher"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "List of issues frequently encountered by our users",
+        "discord": "Community on Discord",
+        "items": [
+            {
+                "title": "No downloads available, what to do?",
+                "description": "In the top menu of the site, select Community Links and add the necessary download sources. If the problem persists, use the community server."
+            },
+            {
+                "title": "One of the games in my library won't launch, what to do?",
+                "description": "You might have downloaded a faulty repack, try downloading another one. If the problem persists, use the community server."
+            },
+            {
+                "title": "What is this site?",
+                "description": "This site is unofficial and serves to support the HydraLauncher community. It is not affiliated with the official developers."
+            },
+            {
+                "title": "For copyright holders",
+                "description": "The site author assumes no responsibility for the HydraLauncher project or the materials posted in the 'Download' and 'Community Links' sections. The website is merely an informational resource."
+            }
+        ]
+    },
+    "download": {
+        "uptitle": "\uD83D\uDC4B The project is always updated",
+        "title": "Available Downloads",
+        "description": "Select your operating system for download"
+    },
+    "global": {
+        "download": "Download",
+        "support_menu": "Support",
+        "faq_menu": "FAQ",
+        "links_menu": "Community Links"
     }
+}
