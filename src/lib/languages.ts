@@ -3,7 +3,7 @@ import * as ru from '@/locales/ru.json';
 import * as pt from '@/locales/pt.json';
 import * as es from '@/locales/es.json';
 
-type Locale = 'en' | 'ru' | 'pt' | 'es';
+export type Locale = 'en' | 'ru' | 'pt' | 'es';
 
 const translations: Record<Locale, TranslationType> = {
     en,
@@ -12,7 +12,7 @@ const translations: Record<Locale, TranslationType> = {
     es
 };
 
-type TranslationType = {
+export type TranslationType = {
     home: {
         meet: string
     },
@@ -40,4 +40,8 @@ type TranslationType = {
 
 export const useTranslations = (locale: Locale): TranslationType => {
     return translations[locale] || translations['en']; // Default to 'en' if locale not found
+};
+
+export const isLocale = (lang: string): lang is Locale => {
+    return ['en', 'ru', 'pt', 'es'].includes(lang);
 };

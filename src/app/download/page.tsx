@@ -1,13 +1,14 @@
 "use client";
 
 import Navigation from "@/components/navigation";
-import { useTranslations } from "@/lib/languages";
+import { useTranslations, Locale, isLocale } from "@/lib/languages";
 let language = 'en';
 export default function DownloadPage() {
     if (typeof window !== "undefined") {
         language = localStorage.getItem("lang") || "en"
     }
-    const t = useTranslations(language);
+    const locale = isLocale(language) ? language : 'en';
+    const t = useTranslations(locale);
     return (
         <main>
             <Navigation />

@@ -1,6 +1,6 @@
 "use client";
 import Navigation from '@/components/navigation';
-import { useTranslations } from '@/lib/languages';
+import {isLocale, useTranslations} from '@/lib/languages';
 import {FAQAccordion} from "@/components/faq";
 let language = 'en';
 
@@ -8,7 +8,8 @@ export default function FAQPage() {
     if (typeof window !== "undefined") {
         language = localStorage.getItem("lang") || "en"
     }
-    const t = useTranslations(language);
+    const locale = isLocale(language) ? language : 'en';
+    const t = useTranslations(locale);
 
     const faqData = t.faq.items.map(faq => {
         return {

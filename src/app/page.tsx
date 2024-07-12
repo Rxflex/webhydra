@@ -4,14 +4,15 @@
 import React from 'react';
 import Navigation from '@/components/navigation';
 import Link from 'next/link';
-import { useTranslations } from '@/lib/languages';
+import {isLocale, useTranslations} from '@/lib/languages';
 let language = 'en';
 
 export default function HomePage() {
     if (typeof window !== "undefined") {
         language = localStorage.getItem("lang") || "en"
     }
-    const t = useTranslations(language);
+    const locale = isLocale(language) ? language : 'en';
+    const t = useTranslations(locale);
     return (
         <main>
             <section className="relative">
