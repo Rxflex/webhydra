@@ -9,6 +9,10 @@ const translations = {
     es
 };
 
-export const useTranslations = (locale: string) : typeof ru => {
+type TranslationType = {
+    [key: string]: string | object
+}
+
+export const useTranslations = (locale: string) : TranslationType => {
     return translations[locale] || translations['en']; // Default to 'en' if locale not found
 };
