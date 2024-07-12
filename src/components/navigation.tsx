@@ -2,12 +2,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useTranslations } from '@/lib/languages';
+import {isLocale, useTranslations} from '@/lib/languages';
 
 export default function Navigation() {
     const [language, setLanguage] = useState('en');
     const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
-    const t = useTranslations(language);
+    const locale = isLocale(language) ? language : 'en';
+    const t = useTranslations(locale);
     const [mobileNavOpen, setMobileNavOpen] = useState(false);
     const navRef = useRef<HTMLDivElement | null>(null);
 
