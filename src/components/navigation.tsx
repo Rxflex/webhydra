@@ -49,7 +49,7 @@ export default function Navigation() {
             </div>
             <div className="w-auto hidden lg:flex">
                 <ul className="flex items-center">
-                    <li className="mr-9 font-medium hover:text-gray-700 dark:hover:text-gray-300"><Link href="//discord.gg/">{t.global.support_menu}</Link></li>
+                    <li className="mr-9 font-medium hover:text-gray-700 dark:hover:text-gray-300"><Link href="//discord.gg/hydralaunchercommunity">{t.global.support_menu}</Link></li>
                     <li className="mr-9 font-medium hover:text-gray-700 dark:hover:text-gray-300"><Link href="//github.com/hydralauncher/hydra">GitHub</Link></li>
                     <li className="mr-9 font-medium hover:text-gray-700 dark:hover:text-gray-300"><Link href="/faq">{t.global.faq_menu}</Link></li>
                     <li className="font-medium hover:text-gray-700 dark:hover:text-gray-300"><Link href="//hydralinks.cloud">{t.global.links_menu}</Link></li>
