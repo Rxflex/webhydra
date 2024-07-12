@@ -1,7 +1,4 @@
 "use client";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
 import Navigation from '@/components/navigation';
 import { useTranslations } from '@/lib/languages';
 import {FAQAccordion} from "@/components/faq";
@@ -13,9 +10,13 @@ export default function FAQPage() {
     }
     const t = useTranslations(language);
 
-    const faqData = t.faq.items.map(
-
-    )
+    const faqData = t.faq.items.map(faq => {
+        return {
+            id: Math.random().toString(36).slice(2),
+            question: faq.title,
+            answer: faq.description
+        }
+    })
 
     return (
         <main>
