@@ -10,7 +10,29 @@ const translations = {
 };
 
 type TranslationType = {
-    [key: string]: string | object
+    "home": {
+        "meet": string
+    },
+    "faq": {
+        "title": string,
+        "description": string,
+        "discord": string,
+        "items": {
+                "title": string,
+                "description": string
+        }[]
+    },
+    "download": {
+        "uptitle": string,
+        "title": string,
+        "description": string
+    },
+    "global": {
+        "download": string,
+        "support_menu": string,
+        "faq_menu": string,
+        "links_menu": string
+    }
 }
 
 export const useTranslations = (locale: string) : TranslationType => {
