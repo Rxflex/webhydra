@@ -9,13 +9,6 @@ const translations = {
     es
 };
 
-type TranslationType = {
-    home: object,
-    faq: object,
-    global: object,
-    download: object
-}
-
-export const useTranslations = (locale: string) : TranslationType => {
+export const useTranslations = (locale: string) : typeof ru => {
     return translations[locale] || translations['en']; // Default to 'en' if locale not found
 };
