@@ -30,7 +30,7 @@ export default function FAQPage() {
                                 <h2 className="mb-7 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight">{t.faq.title}</h2>
                                 <p className="mb-11 text-gray-600 font-medium leading-relaxed">{t.faq.description}</p>
                                 <div className="md:inline-block">
-                                    <button className="py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200" type="button">{t.faq.discord}</button>
+                                    <a href="//discord.gg/hydralaunchercommunity" className="py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200" type="button">{t.faq.discord}</a>
                                 </div>
                             </div>
                         </div>
