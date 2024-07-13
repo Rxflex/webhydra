@@ -123,7 +123,7 @@ export default function Navigation() {
                                         <ul>
                                             <li><button onClick={() => handleLanguageChange('en')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">English</button></li>
                                             <li><button onClick={() => handleLanguageChange('es')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Español</button></li>
-                                            <li><button onClick={() => handleLanguageChange('pt')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Français</button></li>
+                                            <li><button onClick={() => handleLanguageChange('pt')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Português</button></li>
                                             <li><button onClick={() => handleLanguageChange('ru')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Русский</button></li>
                                         </ul>
                                     </div>
