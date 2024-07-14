@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import {isLocale, useTranslations} from '@/lib/languages';
+import { isLocale, useTranslations } from '@/lib/languages';
 
 export default function Navigation() {
     const [language, setLanguage] = useState('en');
@@ -47,27 +47,27 @@ export default function Navigation() {
                     <img src="/images/icon.png" width="50" alt="" />
                 </Link>
             </div>
-            <div className="w-auto hidden lg:flex">
+            <div className="w-auto hidden lg:flex items-center">
                 <ul className="flex items-center">
                     <li className="mr-9 font-medium hover:text-gray-700 dark:hover:text-gray-300"><Link href="//discord.gg/hydralaunchercommunity">{t.global.support_menu}</Link></li>
                     <li className="mr-9 font-medium hover:text-gray-700 dark:hover:text-gray-300"><Link href="//github.com/hydralauncher/hydra">GitHub</Link></li>
                     <li className="mr-9 font-medium hover:text-gray-700 dark:hover:text-gray-300"><Link href="/faq">{t.global.faq_menu}</Link></li>
                     <li className="font-medium hover:text-gray-700 dark:hover:text-gray-300"><Link href="//hydralinks.cloud">{t.global.links_menu}</Link></li>
                 </ul>
-                <Link href="/download" className="ml-4 py-2.5 px-4 text-base font-medium border border-gray-400 hover:border-gray-500 rounded-xl focus:ring focus:ring-gray-50 bg-black hover:bg-gray-800 transition ease-in-out duration-200">
+                <Link href="/download" className="ml-4 py-2.5 px-4 bg-transparent text-base font-medium border border-gray-400 hover:border-gray-500 rounded-xl focus:ring focus:ring-gray-50 bg-black hover:bg-gray-800 hover:text-white transition ease-in-out duration-200">
                     {t.global.download}
                 </Link>
                 <div className="relative inline-block ml-4">
-                    <button onClick={() => setLanguageMenuOpen(!languageMenuOpen)} className="py-2 px-4 border rounded text-black dark:text-white bg-white dark:bg-gray-800 border-gray-400 dark:border-gray-600">
-                        {language.toUpperCase()}
+                    <button onClick={() => setLanguageMenuOpen(!languageMenuOpen)} className="py-2 px-4 border rounded-xl text-black dark:text-white bg-transparent border-0 hover:text-white hover:bg-gray-800 transition ease-in-out duration-200">
+                      {language.toUpperCase()}
                     </button>
                     {languageMenuOpen && (
-                        <div className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded shadow-lg">
-                            <ul>
-                                <li><button onClick={() => handleLanguageChange('en')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">English</button></li>
-                                <li><button onClick={() => handleLanguageChange('es')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Español</button></li>
-                                <li><button onClick={() => handleLanguageChange('pt')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Français</button></li>
-                                <li><button onClick={() => handleLanguageChange('ru')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Русский</button></li>
+                        <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded shadow-lg">
+                            <ul className="overflow-hidden">
+                                <li><button onClick={() => handleLanguageChange('en')} className="block px-4 py-2 size-full text-left text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">English</button></li>
+                                <li><button onClick={() => handleLanguageChange('es')} className="block px-4 py-2 size-full text-left text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Español</button></li>
+                                <li><button onClick={() => handleLanguageChange('pt')} className="block px-4 py-2 size-full text-left text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Português</button></li>
+                                <li><button onClick={() => handleLanguageChange('ru')} className="block px-4 py-2 size-full text-left text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Русский</button></li>
                                 {/* Добавьте больше языков по мере необходимости */}
                             </ul>
                         </div>
@@ -121,10 +121,10 @@ export default function Navigation() {
                                 {languageMenuOpen && (
                                     <div className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded shadow-lg">
                                         <ul>
-                                            <li><button onClick={() => handleLanguageChange('en')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">English</button></li>
-                                            <li><button onClick={() => handleLanguageChange('es')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Español</button></li>
-                                            <li><button onClick={() => handleLanguageChange('pt')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Français</button></li>
-                                            <li><button onClick={() => handleLanguageChange('ru')} className="block px-4 py-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Русский</button></li>
+                                            <li><button onClick={() => handleLanguageChange('en')} className="block px-4 py-2 size-full text-left text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">English</button></li>
+                                            <li><button onClick={() => handleLanguageChange('es')} className="block px-4 py-2 size-full text-left text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Español</button></li>
+                                            <li><button onClick={() => handleLanguageChange('pt')} className="block px-4 py-2 size-full text-left text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Português</button></li>
+                                            <li><button onClick={() => handleLanguageChange('ru')} className="block px-4 py-2 size-full text-left text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Русский</button></li>
                                         </ul>
                                     </div>
                                 )}
